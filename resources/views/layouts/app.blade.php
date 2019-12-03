@@ -10,15 +10,13 @@
         <script src="{{ asset('js/app.js') }}"></script>
     </head>
     <body>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/contacts">Contacts</a>
+
         <div class="container mt-4">
             <h1>@yield('header')</h1>
             <div>
-                <h4>Menu:</h4>
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/about">About</a> this project</li>
-                    <li><a href="/contacts">Contact</a> us to learn more</li>
-                </ul>
                 @yield('content')
             </div>
         </div>

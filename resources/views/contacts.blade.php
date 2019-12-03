@@ -2,6 +2,9 @@
 
 @section('title', 'Contacts')
 
+@section('header', 'Contacts')
+
+
 @section('content')
-    <h1>Contacts</h1>
+
 @endsection
