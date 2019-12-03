@@ -9,15 +9,11 @@
   <meta name="author" content="SitePoint">
 
   <link rel="stylesheet" href="css/styles.css?v=1.0">
-
-  <h1>Home Page</h1>
-  <p>
-    <a href="/about">About</a> this project.
-    </br>
-    <a href="/contacts">Contact</a> us to learn more.
-</head>
-
+  
 <body>
-  <script src="js/scripts.js"></script>
+  <h1>Home Page</h1>
+  <p><a href="/about">About</a> this project</p>
+  <p><a href="/contacts">Contact</a> us to learn more</p>
+</head>
 </body>
 </html>

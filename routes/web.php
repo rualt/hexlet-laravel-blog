@@ -15,10 +15,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/contacts', function () {
-    return view('contacts');
-});
-
 Route::get('/about', function () {
-    return view('about');
+    $team = [
+        ['name' => 'Luke Skywalker', 'position' => "CEO's son"],
+        ['name' => 'C-3PO', 'position' => 'protocol droid'],
+        ['name' => 'R2-D2', 'position' => 'astromech droid'],
+        ['name' => 'Darth Vader', 'position' => 'CEO']
+    ];
+    return view('about', ['team' => $team]);
 });
