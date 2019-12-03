@@ -11,16 +11,22 @@
 |
 */
 
+$team = [
+    ['name' => 'Luke Skywalker', 'position' => "CEO's son"],
+    ['name' => 'C-3PO', 'position' => 'protocol droid'],
+    ['name' => 'R2-D2', 'position' => 'astromech droid'],
+    ['name' => 'Darth Vader', 'position' => 'CEO']
+];
+
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/about', function () {
-    $team = [
-        ['name' => 'Luke Skywalker', 'position' => "CEO's son"],
-        ['name' => 'C-3PO', 'position' => 'protocol droid'],
-        ['name' => 'R2-D2', 'position' => 'astromech droid'],
-        ['name' => 'Darth Vader', 'position' => 'CEO']
-    ];
+Route::get('/contacts', function () {
+    return view('contacts');
+});
+
+
+Route::get('/about', function () use ($team) {
     return view('about', ['team' => $team]);
 });
