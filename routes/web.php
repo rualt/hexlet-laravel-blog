@@ -18,15 +18,17 @@ $team = [
     ['name' => 'Darth Vader', 'position' => 'CEO']
 ];
 
+$articles = \App\Article::all();
+
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/articles', function () {
-    return view('articles');
+Route::get('/articles', function () use ($articles) {
+    return view('articles', compact('articles'));
 });
 
 
 Route::get('/about', function () use ($team) {
-    return view('about', ['team' => $team]);
+    return view('about', compact('team'));
 });

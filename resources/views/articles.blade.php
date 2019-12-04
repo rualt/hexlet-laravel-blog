@@ -5,5 +5,16 @@
 @section('header', 'Articles')
 
 @section('content')
-    <p>Here's gonna be some articles. Probably. Eventually.</p>
+
+<h3>Test of displaying of articles:</h3>
+
+@foreach ($articles as $article)
+    <table  border="1">
+        <tr>
+            <td>{{ $article->name }}</td>
+            <td>{{ $article->body }}</td>
+        </tr>
+    </table>
+@endforeach
+
 @endsection
