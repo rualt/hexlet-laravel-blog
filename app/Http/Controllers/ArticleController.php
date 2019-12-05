@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Article;
+
 class ArticleController extends Controller
 {
-    public function articles()
+    public function index()
     {   
-        $articles = \App\Article::all();
-        return view('page.articles', compact('articles'));
+        $articles = Article::paginate();
+        return view('article.index', compact('articles'));
     }
 }
