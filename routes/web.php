@@ -15,7 +15,8 @@
 Route::get('/', 'PageController@home');
 Route::get('/about', 'PageController@about');
 
-Route::get('/articles', 'ArticleController@articles');
+Route::get('/articles', 'ArticleController@index')
+    ->name('articles.index');
 
 
 /* $team = [
