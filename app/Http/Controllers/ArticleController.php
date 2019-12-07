@@ -74,7 +74,7 @@ class ArticleController extends Controller
     {
         $article = Article::find($id);
         if ($article) {
-        $article->delete();
+            $article->delete();
         }
         return redirect()->route('articles.index');
     }
