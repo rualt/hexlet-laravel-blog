@@ -8,8 +8,8 @@
         </br>{{$article->id}}</td>
         <a href="{{route('articles.show', $article->id)}}">{{$article->name}}</a></td></br>
         <div>{{Str::limit($article->body, 100)}}</div></br>
-        <a href="{{route('articles.edit', $article->id)}}">Edit
-        <a href="{{route('articles.destroy', $article->id)}}" data-confirm="Вы уверены?" data-method="delete">Delete
+        <a href="{{route('articles.edit', $article->id)}}">Edit</a>
+        <a href="{{route('articles.destroy', $article->id)}}" data-confirm="Вы уверены?" data-method="delete">Delete</a>
         </br>
     @endforeach
 @endsection
