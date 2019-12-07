@@ -2,13 +2,6 @@
 
 namespace App\Http\Controllers;
 
-$team = [
-    ['name' => 'Luke Skywalker', 'position' => "CEO's son"],
-    ['name' => 'C-3PO', 'position' => 'protocol droid'],
-    ['name' => 'R2-D2', 'position' => 'astromech droid'],
-    ['name' => 'Darth Vader', 'position' => 'CEO']
-];
-
 class PageController extends Controller
 {
     public function home()
