@@ -29,9 +29,11 @@ Route::post('/articles', 'ArticleController@store')
 Route::get('/articles/{id}/edit', 'ArticleController@edit')
 ->name('articles.edit');
 
-Route::get('/articles/{id}', 'ArticleController@show')
-    ->name('articles.show');
-
 Route::patch('/articles/{id}', 'ArticleController@update')
   ->name('articles.update');
 
+Route::get('/articles/{id}', 'ArticleController@show')
+    ->name('articles.show');
+
+Route::delete('/articles/{id}', 'ArticleController@destroy')
+  ->name('articles.destroy');

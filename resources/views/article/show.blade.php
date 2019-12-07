@@ -5,3 +5,4 @@
     <div>{{$article->body}}</div>
     <a href="{{ route('articles.edit', $article->id)}}">Редактировать</a>
 @endsection
+

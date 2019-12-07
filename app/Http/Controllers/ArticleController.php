@@ -69,4 +69,13 @@ class ArticleController extends Controller
         return view('article.show', compact('article'));
     }
 
+    public function destroy($id)
+    {
+        $article = Article::find($id);
+        if ($article) {
+        $article->delete();
+        }
+        return redirect()->route('articles.index');
+    }
+
 }   
